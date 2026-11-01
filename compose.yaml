@@ -1,0 +1,19 @@
+name: onebrain
+services:
+  db:
+    image: postgres:18@sha256:3a4264520e121176619f54ff867d12774bc81e95e7b84db58d63bccdb6144b81
+    environment:
+      POSTGRES_DB: onebrain
+      POSTGRES_USER: onebrain
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-onebrain-local}
+    ports:
+      - "127.0.0.1:${DB_PORT:-5432}:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U onebrain -d onebrain"]
+      interval: 2s
+      timeout: 5s
+      retries: 30
+volumes:
+  postgres-data:

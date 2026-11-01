@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: onebrain
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://127.0.0.1:5432/onebrain}
+    username: ${DB_USERNAME:onebrain}
+    password: ${DB_PASSWORD:}
+  jackson:
+    deserialization:
+      fail-on-unknown-properties: true
+server:
+  address: ${SERVER_ADDRESS:127.0.0.1}
+  port: ${SERVER_PORT:8080}
+  max-http-request-header-size: 16KB
+  tomcat:
+    max-http-form-post-size: 64KB
+  error:
+    include-message: never
+    include-stacktrace: never

@@ -1,0 +1,8 @@
+# Synthetic development accounts and fixtures; never enable for a shared deployment.
+spring:
+  datasource:
+    password: ${DB_PASSWORD:onebrain-local}
+  flyway:
+    locations: classpath:db/migration,classpath:db/local
+onebrain:
+  local-password: ${ONEBRAIN_LOCAL_PASSWORD:onebrain-local}
