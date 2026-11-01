@@ -19,5 +19,6 @@ ADRs document decisions that materially affect architecture, data, security, dep
 | [0005](0005-mcp-as-adapter.md) | MCP is an adapter over application services | Proposed |
 | [0006](0006-postgres-job-queue.md) | Use a PostgreSQL job table initially | Proposed |
 | [0007](0007-technology-stack.md) | Java/Spring Boot, React/TypeScript, PostgreSQL | Proposed |
+| [0008](0008-foundation-milestone.md) | Scoped manual-note foundation | Accepted |
 
-All ADRs require owner review before implementation begins.
+The owner approved the foundation milestone in ADR 0008. Earlier proposals describe the broader intended product and retain their review status.

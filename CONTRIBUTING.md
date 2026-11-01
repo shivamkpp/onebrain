@@ -1,6 +1,6 @@
 # Contributing to OneBrain
 
-OneBrain is currently in the product and architecture design phase. The goal of this repository is to make the product sufficiently unambiguous that implementation can proceed without repeatedly re-deciding its foundations.
+OneBrain has a working create/read knowledge-note foundation. The broader product remains under development; the architecture documents describe its intended direction. See `README.md` for setup and `docs/IMPLEMENTATION.md` for the implemented boundary.
 
 ## Working agreements
 
@@ -18,6 +18,15 @@ OneBrain is currently in the product and architecture design phase. The goal of 
 3. Add or amend an ADR for decisions that materially change architecture, dependencies, data ownership, or security posture.
 4. Update acceptance criteria and evaluation cases when observable behavior changes.
 5. Record unresolved trade-offs explicitly.
+
+## Code changes
+
+- Keep changes focused on the current milestone and organize backend code by feature.
+- Run `./scripts/check.sh`; for changes to the user flow, also run `./scripts/e2e.sh` after installing Chromium.
+- Backend integration tests require Docker and use real PostgreSQL, not an in-memory substitute.
+- Commit the npm lockfile. Change versioned migrations by adding a new migration once they have been shared.
+- Test access denial as well as successful behavior when adding a data access path.
+- Record actual verification results; distinguish local checks from hosted CI and future-task restoration.
 
 ## Status vocabulary
 
