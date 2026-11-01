@@ -27,12 +27,14 @@ The initial product is a modular monolith with PostgreSQL and pgvector, a Java/S
 | [Product Requirements (PRD)](docs/PRD.md) | The authoritative problem statement, users, requirements, scope, workflows, and acceptance criteria |
 | [High-Level Design](docs/HLD.md) | System boundaries, components, data flow, and deployment view |
 | [Low-Level Design](docs/LLD.md) | Module responsibilities, interfaces, processing contracts, and failure handling |
+| [Technology Stack](docs/TECH_STACK.md) | Recommended languages, frameworks, infrastructure, and rationale |
 | [Data Model](docs/DATA_MODEL.md) | Canonical entities, relationships, provenance, permissions, and lifecycle |
 | [Retrieval Design](docs/RETRIEVAL_DESIGN.md) | Hybrid retrieval, graph expansion, ranking, citations, and freshness |
 | [MCP Design](docs/MCP_DESIGN.md) | Agent-facing tools and protocol boundary |
 | [Security & Privacy](docs/SECURITY.md) | Tenant isolation, authorization, data handling, and threat model |
 | [Evaluation Plan](docs/EVALUATION.md) | Baselines, datasets, metrics, and release gates |
 | [Roadmap](docs/ROADMAP.md) | Sequenced delivery plan and explicit non-goals |
+| [Open Questions](docs/OPEN_QUESTIONS.md) | Decisions that require product-owner or deployment input |
 | [Architecture Decisions](docs/adr/README.md) | Decision records and alternatives considered |
 
 ## Non-goals
